@@ -14,12 +14,12 @@ module.exports = {
           "grayish-blue": "hsl(233, 8%, 79%)",
           "very-dark-blue": "hsl(240, 100%, 5%)",
         },
-        fontFamily: {
-          body: ["Inter", "sans-serif"],
-        },
-        fontSize: {
-          paragraph: "20px",
-        },
+      },
+      fontFamily: {
+        body: ["Inter", "sans-serif"],
+      },
+      fontSize: {
+        paragraph: "15px",
       },
     },
   },
