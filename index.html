@@ -15,26 +15,15 @@
     <link rel="stylesheet" href="./css/output.css" />
 
     <title>DevFoxie | News homepage</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body
     class=
     "bg-neutral-off-white font-body 
     text-paragraph flex flex-col items-center
     text-neutral-dark-grayish-blue"
-  >
+    >
     <div class="w-[90%] pt-10">
-      <header class="mb-7">
+      <header class="mb-10">
         <nav class="flex justify-between items-center">
           <img src="./assets/images/logo.svg" alt="logo" />
 
@@ -52,76 +41,85 @@
       </header>
 
       <main class="flex flex-col gap-7">
-        <article class="flex flex-col gap-5 mb-8">
-          <img 
-            src="./assets/images/image-web-3-mobile.jpg" 
-            alt="Web 3.0" 
-            class="md:hidden"
-          />
-          <img 
-            src="./assets/images/image-web-3-desktop.jpg" 
-            alt="Web 3.0" 
-            class="max-md:hidden"
-          />
+        <section class="lg:flex lg:flex-row justify-between">
+          <article class="flex flex-col gap-5 mb-8 lg:gap-0 lg:w-[66%]">
+            <img 
+              src="./assets/images/image-web-3-mobile.jpg" 
+              alt="Web 3.0" 
+              class="md:hidden"
+            />
+            <img 
+              src="./assets/images/image-web-3-desktop.jpg" 
+              alt="Web 3.0" 
+              class="max-md:hidden"
+            />
 
-          <div class="flex flex-col gap-5 md:flex-row">
-            <h1 class="text-5xl text-neutral-very-dark-blue font-extrabold">
-              The Bright Future of Web 3.0?
-            </h1>
-  
-            <div class="flex flex-col gap-5">
-              <p>
-                We dive into the next evolution of the web that claims to put the
-                power of the platforms back into the hands of the people. But is
-                it really fulfilling its promise?
-              </p>
-              <a
-                href="#"
-                class="bg-primary-red p-5 flex justify-center items-center uppercase tracking-[0.2em] text-neutral-off-white font-bold w-[55%]"
-                >Read more
-              </a>
+            <div class="flex flex-col gap-5 md:flex-row lg:mt-10 lg:justify-between">
+              <div class="lg:w-[46%]">
+                <h1 class="text-5xl text-neutral-very-dark-blue font-extrabold">
+                  The Bright Future of Web 3.0?
+                </h1>
+              </div>
+              <div class="flex flex-col gap-5 lg:w-[50%]">
+                <p>
+                  We dive into the next evolution of the web that claims to put the
+                  power of the platforms back into the hands of the people. But is
+                  it really fulfilling its promise?
+                </p>
+                <a
+                  href="#"
+                  class="bg-primary-red p-5 flex justify-center items-center uppercase tracking-[0.2em] text-neutral-off-white font-bold w-[55%]"
+                  >Read more
+                </a>
+              </div>
             </div>
+          </article>
 
+          <div class="flex flex-col gap-5 p-5 bg-neutral-very-dark-blue lg:w-[31%] xl:gap-10">
+            <h2 class="text-primary-orange text-3xl font-bold xl:h-[10%] xl:flex  xl:items-center">New</h2>
+
+            
+              <a href="#" class="group">
+                <article class="">
+                  <h3
+                    class="text-neutral-off-white text-xl font-bold group-hover:text-primary-orange"
+                  >
+                    Hydrogen VS Electric Cars
+                  </h3>
+
+                  <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                </article>
+              </a>
+              <hr />
+
+              <a href="#" class="group">
+                <article>
+                  <h3 class="text-neutral-off-white text-xl font-bold group-hover:text-primary-orange">
+                    The Downsides of AI Artistry
+                  </h3>
+                  <p>
+                    What are the possible adverse effects of on-demand AI image
+                    generation?
+                  </p>
+                </article>
+              </a>
+              <hr />
+
+              <a href="#" class="group">
+                <article>
+                  <h3 class="text-neutral-off-white text-xl font-bold group-hover:text-primary-orange">
+                    Is VC Funding Drying Up?
+                  </h3>
+                  <p>
+                    Private funding by VC firms is down 50% YOY. We take a look at
+                    what that means.
+                  </p>
+                </article>
+              </a>
           </div>
-        </article>
+       </section>
 
-        <section class="flex flex-col gap-5 p-5 bg-neutral-very-dark-blue">
-          <h2 class="text-primary-orange text-3xl font-bold">New</h2>
-
-          <a href="#" class="group">
-            <article>
-              <h3
-                class="text-neutral-off-white text-xl font-bold group-hover:text-primary-orange"
-              >
-                Hydrogen VS Electric Cars
-              </h3>
-
-              <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-            </article>
-          </a>
-          <hr />
-          <article>
-            <h3 class="text-neutral-off-white text-xl font-bold">
-              The Downsides of AI Artistry
-            </h3>
-            <p>
-              What are the possible adverse effects of on-demand AI image
-              generation?
-            </p>
-          </article>
-          <hr />
-          <article>
-            <h3 class="text-neutral-off-white text-xl font-bold">
-              Is VC Funding Drying Up?
-            </h3>
-            <p>
-              Private funding by VC firms is down 50% YOY. We take a look at
-              what that means.
-            </p>
-          </article>
-        </section>
-
-        <section class="flex gap-5 lg:flex-wrap lg:gap-0 lg:justify-between">
+        <section class="flex gap-5 lg:flex-wrap lg:gap-0 lg:justify-between lg:mt-10">
           <article class="flex flex-row gap-[3%] md:gap-[5%] lg:w-[50%] lg:mb-5">
             <img 
               src="./assets/images/image-retro-pcs.jpg" 
@@ -194,10 +192,10 @@
       </main>
     </div>
 
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by
       <a href="https://www.dev-foxie.com" target="_blank">DevFoxie</a>. Coded by
-      <a href="#">Your Name Here</a>. -->
+      <a href="#">Ahmed AL-OBEIDI</a>
     </div>
   </body>
 </html>
